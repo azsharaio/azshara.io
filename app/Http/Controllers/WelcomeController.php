@@ -9,7 +9,7 @@ class WelcomeController extends Controller
     public function showWisdom()
     {
         $wisdoms = array(
-            array('你穷,是因为你没有极度渴望成为成功的野心!','心灵鸡汤'),
+            array('你穷，是因为你没有极度渴望成为成功的野心！','心灵鸡汤'),
             array('没有理想，就没方向；没有方向，就没有生活。','列夫•托尔斯泰'),
             array('一寸光阴一寸金，寸金难买寸光阴。','《增广贤文》'),
             array('人生一世，草木一秋，转瞬即逝，都是过眼云烟。','《心灵鸡汤》'),

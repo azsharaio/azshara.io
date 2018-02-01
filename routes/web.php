@@ -12,3 +12,8 @@
 */
 
 Route::get('/', 'WelcomeController@showWisdom');
+Route::get('/test','TestController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
