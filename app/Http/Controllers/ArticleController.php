@@ -49,7 +49,8 @@ class ArticleController extends Controller
      */
     public function show($id)
     {
-        //
+        $query = Article::find($id);
+        return view('article.detail',compact('query'));
     }
 
     /**

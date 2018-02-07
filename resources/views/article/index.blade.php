@@ -7,7 +7,7 @@
     @foreach ($query as $var)
       <tr>
         <td>{{$var->id}}</td>
-        <td>{{$var->title}}</td>
+        <td><a href="{{url('article/'.$var->id)}}">{{$var->title}}</a></td>
         <td><a href="{{url('article/'.$var->id.'/edit')}}" class="btn btn-warning">编辑</a></td>
         <td>
             <form action="{{url('article/'.$var->id)}}" method="post">
