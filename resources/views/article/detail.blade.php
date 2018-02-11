@@ -2,11 +2,10 @@
 
 @section('content')
 <section class="container">
-<h1>
+<h2>
 {{ $query->title}}
-</h1>
-<p>
-{{ $query->content}}
-</p>
+</h2>
+{!! Parsedown::instance()->setMarkupEscaped(true)->text($query->content) !!}
+
 </section>
 @endsection

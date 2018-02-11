@@ -79,7 +79,6 @@ class ArticleController extends Controller
             'title' => $request->get('title'),
             'content' => $request->get('content')
         ]);
-
         // Article::where('id',$id)->update($request->all());
         return redirect('article');
     }

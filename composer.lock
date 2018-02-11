@@ -4,8 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7904d07d1e1765a0a199aa11d6301a3",
+    "content-hash": "52f32b9b8b3246a4cff5df95aa265cfa",
     "packages": [
+        {
+            "name": "azshara/laravel-editor-md",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/azsharaio/laravel-editor-md.git",
+                "reference": "721c0ff3c35c6c249794de71a6645deb374bf188"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/azsharaio/laravel-editor-md/721c0ff3c35c6c249794de71a6645deb374bf188.zip",
+                "reference": "721c0ff3c35c6c249794de71a6645deb374bf188",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "laravel",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Douyasi\\Editor\\EditorServiceProvider"
+                    ],
+                    "aliases": {
+                        "Editor": "Douyasi\\Editor\\EditorServiceProvider"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Douyasi\\Editor\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "azshara",
+                    "email": "azshara.io@gmail.com"
+                }
+            ],
+            "description": "laravel editor for markdown",
+            "time": "2018-02-11T07:40:40+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -3951,7 +4000,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "azshara/laravel-editor-md": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
