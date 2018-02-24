@@ -5,7 +5,7 @@
 <h2>
 {{ $query->title}}
 </h2>
-{!! Parsedown::instance()->setMarkupEscaped(true)->text($query->content) !!}
-
+{!! Parsedown::instance()->setBreaksEnabled(true)->setBreaksEnabled(true)->text($query->content) !!}
+<!-- {!!$query->content !!} -->
 </section>
 @endsection

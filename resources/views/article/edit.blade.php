@@ -7,6 +7,7 @@
     {{ csrf_field() }}
     {{ method_field('PUT') }}
     <input type="text" name="title" class="form-control" value="{{ $query->title}}">
+    <br />
     <div id="mdeditor">
         <textarea class="form-control" name="content" style="display:none;">
             {{ $query->content}}
